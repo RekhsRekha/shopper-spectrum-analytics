@@ -57,6 +57,26 @@ st.markdown("""
         font-weight: 700 !important;
     }
     
+    /* --- STATIC TABLE VISIBILITY FIX --- */
+    div[data-testid="stTable"] table {
+        color: #f8fafc !important; /* Makes table cell text bright & legible */
+        background-color: #1e293b !important; /* Matches card backgrounds */
+        border-collapse: collapse;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    
+    div[data-testid="stTable"] th {
+        background-color: #334155 !important; /* Slightly distinct header color */
+        color: #38bdf8 !important; /* Accent light blue for column titles */
+        font-weight: 600 !important;
+    }
+
+    div[data-testid="stTable"] td {
+        border-bottom: 1px solid #334155 !important;
+        color: #e2e8f0 !important;
+    }
+    
     /* Luminous Dashboard Section Headers */
     h1, h2, h3, h4 {
         color: #f8fafc !important;
